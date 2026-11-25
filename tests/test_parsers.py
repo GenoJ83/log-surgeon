@@ -1,3 +1,5 @@
+import pytest
+pytest.importorskip("pydantic")
 from src.parsers.regex_parser import parse_line
 
 def test_regex_parser():

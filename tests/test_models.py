@@ -1,3 +1,5 @@
+import pytest
+pytest.importorskip("pydantic")
 from src.models.entry import LogEntry
 
 def test_log_entry_defaults():
